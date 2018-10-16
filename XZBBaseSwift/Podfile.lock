@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (4.7.3)
+  - EmptyDataSet-Swift (4.2.0)
+  - HandyJSON (4.2.0)
+  - IQKeyboardManagerSwift (6.1.1)
+  - Kingfisher (4.10.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.7)
+  - Reusable (4.0.3):
+    - Reusable/Storyboard (= 4.0.3)
+    - Reusable/View (= 4.0.3)
+  - Reusable/Storyboard (4.0.3)
+  - Reusable/View (4.0.3)
+  - SnapKit (4.0.1)
+  - SwiftMessages (6.0.0):
+    - SwiftMessages/App (= 6.0.0)
+  - SwiftMessages/App (6.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - EmptyDataSet-Swift
+  - HandyJSON
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - MBProgressHUD
+  - MJRefresh
+  - Reusable
+  - SnapKit
+  - SwiftMessages
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - EmptyDataSet-Swift
+    - HandyJSON
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - MBProgressHUD
+    - MJRefresh
+    - Reusable
+    - SnapKit
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  EmptyDataSet-Swift: 1fa0b35f530a35f852ecb2b53564728b0c300aaf
+  HandyJSON: 9dfc026c7d7adc1f0f8ba8b181495f0e0763b0f4
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  Reusable: 12b67a60e1f3e8c523cc910795dab733f58fbc7e
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftMessages: da7c981256a65b3e58022d9027a36584cf4eccf5
+
+PODFILE CHECKSUM: 2b61fb912995aa3cfdc29951bd8f72efa261d722
+
+COCOAPODS: 1.5.3

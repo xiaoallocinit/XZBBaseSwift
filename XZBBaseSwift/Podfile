@@ -1,0 +1,21 @@
+platform :ios, '9.0'
+
+target 'XZBBaseSwift' do
+    
+    pod 'Alamofire'
+	pod 'HandyJSON'
+	pod 'Kingfisher'
+    pod 'SnapKit'
+    pod 'MJRefresh'
+	pod 'IQKeyboardManagerSwift'
+    pod 'Reusable'
+    pod 'MBProgressHUD'
+    #消息提示
+    pod 'SwiftMessages'
+    #预加载
+    #pod 'SkeletonView'
+    #工具扩展
+    #pod 'EZSwiftExtensions'
+    pod 'EmptyDataSet-Swift'
+use_frameworks! 
+end

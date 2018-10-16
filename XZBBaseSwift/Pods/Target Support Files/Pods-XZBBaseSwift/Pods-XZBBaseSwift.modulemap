@@ -1,0 +1,6 @@
+framework module Pods_XZBBaseSwift {
+  umbrella header "Pods-XZBBaseSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
