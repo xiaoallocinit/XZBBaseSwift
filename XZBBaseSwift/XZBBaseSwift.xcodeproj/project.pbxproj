@@ -27,6 +27,8 @@
 		2D50EA2C2175C86E00431D4F /* XZBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D50EA2B2175C86E00431D4F /* XZBNavigationController.swift */; };
 		2D50EA2E2175CC6100431D4F /* XZBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D50EA2D2175CC6100431D4F /* XZBWebViewController.swift */; };
 		2D50EA352175DC6100431D4F /* XZBHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D50EA342175DC6000431D4F /* XZBHttpTool.swift */; };
+		2DC5850A21772318009069B9 /* XZBHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5850921772318009069B9 /* XZBHttpRequest.swift */; };
+		2DC5850D2177320C009069B9 /* XZBBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5850C2177320C009069B9 /* XZBBaseModel.swift */; };
 		DA381069FCC93901664B08AA /* Pods_XZBBaseSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6661B72770AEA37E6A528743 /* Pods_XZBBaseSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		2D50EA2D2175CC6100431D4F /* XZBWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZBWebViewController.swift; sourceTree = "<group>"; };
 		2D50EA342175DC6000431D4F /* XZBHttpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZBHttpTool.swift; sourceTree = "<group>"; };
 		2D50EA362175DD9300431D4F /* XZBBaseSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XZBBaseSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		2DC5850921772318009069B9 /* XZBHttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZBHttpRequest.swift; sourceTree = "<group>"; };
+		2DC5850C2177320C009069B9 /* XZBBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XZBBaseModel.swift; sourceTree = "<group>"; };
 		6661B72770AEA37E6A528743 /* Pods_XZBBaseSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XZBBaseSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E65725451FF529F6FFB2D1E /* Pods-XZBBaseSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZBBaseSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-XZBBaseSwift/Pods-XZBBaseSwift.release.xcconfig"; sourceTree = "<group>"; };
 		E8707D94739AED8356B1742D /* Pods-XZBBaseSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZBBaseSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XZBBaseSwift/Pods-XZBBaseSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		2D50E9E42175818700431D4F /* XZBBaseSwift */ = {
 			isa = PBXGroup;
 			children = (
+				2DC5850B217731C8009069B9 /* Model */,
 				2D50EA312175D40E00431D4F /* Tool */,
 				2D50EA162175923000431D4F /* Extension */,
 				2D50EA13217591AC00431D4F /* Base */,
@@ -193,8 +198,17 @@
 			isa = PBXGroup;
 			children = (
 				2D50EA342175DC6000431D4F /* XZBHttpTool.swift */,
+				2DC5850921772318009069B9 /* XZBHttpRequest.swift */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		2DC5850B217731C8009069B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DC5850C2177320C009069B9 /* XZBBaseModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4CC3A7E3C37E4C20123417E8 /* Pods */ = {
@@ -416,9 +430,11 @@
 			files = (
 				2D50EA2A2175C82700431D4F /* XZBTabBarController.swift in Sources */,
 				2D50EA262175BF8D00431D4F /* XZBUIFontExtension.swift in Sources */,
+				2DC5850A21772318009069B9 /* XZBHttpRequest.swift in Sources */,
 				2D50EA15217591FC00431D4F /* XZBBaseViewController.swift in Sources */,
 				2D50EA352175DC6100431D4F /* XZBHttpTool.swift in Sources */,
 				2D50EA1E2175BDFC00431D4F /* XZBUIImageExtension.swift in Sources */,
+				2DC5850D2177320C009069B9 /* XZBBaseModel.swift in Sources */,
 				2D50EA2E2175CC6100431D4F /* XZBWebViewController.swift in Sources */,
 				2D50EA222175BF1C00431D4F /* XZBUILabelExtension.swift in Sources */,
 				2D50EA202175BF0500431D4F /* XZBStringExtension.swift in Sources */,
@@ -612,7 +628,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = swift.XZBBaseSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XZBBase.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "XZBBaseSwift/XZBBaseSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -634,7 +650,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = swift.XZBBaseSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XZBBase.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "XZBBaseSwift/XZBBaseSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

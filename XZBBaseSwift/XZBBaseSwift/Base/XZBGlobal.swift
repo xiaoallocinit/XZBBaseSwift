@@ -25,10 +25,23 @@ let XZBColorBackGround      = UIColor.colorWithHex(hex: 0xFFFFFF)
 let XZBColorTitle   = UIColor.colorWithHex(hex: 0x333333)
 let XZBColorNavigationBar   = UIColor.colorWithHex(hex: 0x333333)
 
+//MARK: BaseUrl
+enum NetworkError: Int {
+    case HttpResquestFailed = -1000,UrlResourceFailed = -2000
+}
+
+let NetworkDomain:String = "com.XZBBase.Swift"
+
+let BaseUrl : String =  ""
+
+/** 当前版本 */
+let CurrentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+
+
 
 
 //MARK: print
-func uLog<T>(_ message: T, file: String = #file, function: String = #function, lineNumber: Int = #line) {
+func XZBLog<T>(_ message: T, file: String = #file, function: String = #function, lineNumber: Int = #line) {
     #if DEBUG
     let fileName = (file as NSString).lastPathComponent
     print("[\(fileName):funciton:\(function):line:\(lineNumber)]- \(message)")
